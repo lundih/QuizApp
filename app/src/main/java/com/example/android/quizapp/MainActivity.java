@@ -8,6 +8,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -221,14 +222,8 @@ public class MainActivity extends AppCompatActivity {
         button2.setVisibility(View.VISIBLE);
 
         //make sure all the checkboxes and radiobuttons are unchecked
-        RadioButton radioButton = (RadioButton) findViewById(R.id.niels_bohr_radiobutton);
-        radioButton.setChecked(false);
-        RadioButton radioButton2 = (RadioButton) findViewById(R.id.albert_einstein_radiobutton);
-        radioButton2.setChecked(false);
-        RadioButton radioButton3 = (RadioButton) findViewById(R.id.max_plank_radiobutton);
-        radioButton3.setChecked(false);
-        RadioButton radioButton4 = (RadioButton) findViewById(R.id.charles_darwin_radiobutton);
-        radioButton4.setChecked(false);
+        RadioGroup radioGroup1 = (RadioGroup) findViewById(R.id.radio_group1);
+        radioGroup1.clearCheck();
 
         CheckBox checkBox = (CheckBox) findViewById(R.id.inventing_calculus_checkbox);
         checkBox.setChecked(false);
@@ -239,25 +234,16 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkBox4 = (CheckBox) findViewById(R.id.colour_spectrum_checkbox);
         checkBox4.setChecked(false);
 
-        RadioButton radioButton5 = (RadioButton) findViewById(R.id.rutherford_radiobutton);
-        radioButton5.setChecked(false);
-        RadioButton radioButton6 = (RadioButton) findViewById(R.id.maxwell_radiobutton);
-        radioButton6.setChecked(false);
-        RadioButton radioButton7 = (RadioButton) findViewById(R.id.bohr_radiobutton);
-        radioButton7.setChecked(false);
+        RadioGroup radioGroup2 = (RadioGroup) findViewById(R.id.radio_group2);
+        radioGroup2.clearCheck();
 
-        RadioButton radioButton8 = (RadioButton) findViewById(R.id.einstein_radiobutton);
-        radioButton8.setChecked(false);
-        RadioButton radioButton9 = (RadioButton) findViewById(R.id.marie_curie_radiobutton);
-        radioButton9.setChecked(false);
-        RadioButton radioButton10 = (RadioButton) findViewById(R.id.thomas_edison_radiobutton);
-        radioButton10.setChecked(false);
-        RadioButton radioButton11 = (RadioButton) findViewById(R.id.nikola_testla_radiobutton);
-        radioButton11.setChecked(false);
+        RadioGroup radioGroup3 = (RadioGroup) findViewById(R.id.radio_group3);
+        radioGroup3.clearCheck();
 
         EditText editText = (EditText) findViewById(R.id.question5_edittext);
         editText.setText("");
 
+        //scroll to the top
         final ScrollView scrollview = ((ScrollView) findViewById(R.id.scrollView));
         scrollview.post(new Runnable() {
             @Override
