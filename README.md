@@ -8,7 +8,7 @@ The app has been designed with material design principles in mind to provide the
 
 ### Potrait mode
 <p align="left">
-  <img src="potraitQuizApp.png" width="250"/>
+  <img src="potraitQuizzApp.png" width="250"/>
 </p>
 
 ### Landscape mode
