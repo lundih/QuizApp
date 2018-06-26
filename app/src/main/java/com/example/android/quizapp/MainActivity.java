@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
     public void evaluateQuestion5(){
         EditText editText = (EditText) findViewById(R.id.question5_edittext);
         String question5Response = editText.getText().toString();
-        if (question5Response.equals("Galilei")){
+        if (question5Response.equals("Galilei")|| question5Response.equals("galilei")){
             isQuestion5Correct = true;
             score = score + 1;
         }else{
