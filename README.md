@@ -24,7 +24,8 @@ If you don't get all the answers right, worry not. The app will give you an anal
   <img src="img/analysisQuizApp.png" width="250"/>
 </p>
 <br><br>
-### Link to apk on G-Drive
+
+<b>Link to apk on G-drive</b><br>
 https://drive.google.com/file/d/1QPg_hyXyCzOnExzE5u1aE5V8nPjv5KEM/view?usp=sharing
 <br><br>
 
